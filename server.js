@@ -14,7 +14,10 @@ app.get("/:date", function(req, res){
         data = JSON.stringify(data);
         res.end(data);
     } else{
-        var data = {};
+        var data = {
+            "unit": null,
+            "natural": null
+        };
         data = JSON.stringify(data);
         res.end(data);
     }
