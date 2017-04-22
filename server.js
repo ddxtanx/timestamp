@@ -22,4 +22,4 @@ app.get("/dateconverter/:date", function(req, res){
         res.end(data);
     }
 })
-app.listen(process.end.PORT || 8080);
+app.listen(process.env.PORT || 8080);
