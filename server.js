@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.get("/:date", function(req, res){
+app.get("/dateconverter/:date", function(req, res){
     var date = req.params.date;
     var parsedDate = Date.parse(date);
     var dateConstructed = new Date(parsedDate);
@@ -22,4 +22,4 @@ app.get("/:date", function(req, res){
         res.end(data);
     }
 })
-app.listen(8080);
+app.listen(process.end.PORT || 8080);
